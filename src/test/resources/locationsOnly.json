@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Earth (C-137)",
+    "type": "Planet",
+    "dimension": "Dimension C-137"
+  },
+  {
+    "id": 2,
+    "name": "Abadango",
+    "type": "Cluster",
+    "dimension": "unknown"
+  },
+  {
+    "id": 3,
+    "name": "Citadel of Ricks",
+    "type": "Space station",
+    "dimension": "unknown"
+  },
+  {
+    "id": 4,
+    "name": "Worldender's lair",
+    "type": "Planet",
+    "dimension": "unknown"
+  },
+  {
+    "id": 5,
+    "name": "Anatomy Park",
+    "type": "Microverse",
+    "dimension": "Dimension C-137"
+  },
+  {
+    "id": 6,
+    "name": "Interdimensional Cable",
+    "type": "TV",
+    "dimension": "unknown"
+  },
+  {
+    "id": 20,
+    "name": "Earth (Replacement Dimension)",
+    "type": "Planet",
+    "dimension": "Replacement Dimension"
+  },
+  {
+    "id": 21,
+    "name": "Testicle Monster Dimension",
+    "type": "Dimension",
+    "dimension": "Testicle Monster Dimension"
+  }
+]

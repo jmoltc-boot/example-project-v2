@@ -1,0 +1,100 @@
+---
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: "On Boarding API"
+schemes:
+  - "http"
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+tags:
+  - name: characters
+    description: Everything about Characters
+
+paths:
+  /characters:
+    get:
+      tags:
+        - characters
+      description: "Returns all characters"
+      operationId: "getCharacters"
+      responses:
+        "200":
+          description: "A list of characters."
+          schema:
+            $ref: "#/definitions/GetCharactersResponse"
+        "500":
+          description: "Response with error."
+          schema:
+            $ref: "#/definitions/ApiErrorResponse"
+
+definitions:
+  GetCharactersResponse:
+    type: "object"
+    required:
+      - "total"
+      - "characters"
+    properties:
+      total:
+        type: "integer"
+        format: "int64"
+      characters:
+        type: "array"
+        items:
+          $ref: "#/definitions/ApiCharacter"
+
+  ApiCharacter:
+    type: "object"
+    required:
+      - "id"
+      - "name"
+      - "status"
+      - "species"
+      - "type"
+      - "gender"
+      - "origin"
+      - "location"
+    properties:
+      id:
+        type: "integer"
+      name:
+        type: "string"
+      status:
+        type: "string"
+      species:
+        type: "string"
+      type:
+        type: "string"
+      gender:
+        type: "string"
+      origin:
+        $ref: "#/definitions/ApiLocation"
+      location:
+        $ref: "#/definitions/ApiLocation"
+
+  ApiLocation:
+    type: "object"
+    required:
+      - "id"
+      - "name"
+      - "type"
+      - "dimension"
+    properties:
+      id:
+        type: "integer"
+      name:
+        type: "string"
+      type:
+        type: "string"
+      dimension:
+        type: "string"
+
+  ApiErrorResponse:
+    type: "object"
+    required:
+      - "message"
+    properties:
+      message:
+        type: "string"

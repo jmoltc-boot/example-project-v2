@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "name": "Rick Sanchez",
+    "status": "Alive",
+    "species": "Human",
+    "type": "",
+    "gender": "Male",
+    "origin": {
+      "id": 1,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    },
+    "location": {
+      "id": 3,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    }
+  },
+  {
+    "id": 2,
+    "name": "Morty Smith",
+    "status": "Alive",
+    "species": "Human",
+    "type": "",
+    "gender": "Male",
+    "origin": {
+      "id": null,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    },
+    "location": {
+      "id": 3,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    }
+  },
+  {
+    "id": 3,
+    "name": "Summer Smith",
+    "status": "Alive",
+    "species": "Human",
+    "type": "",
+    "gender": "Female",
+    "origin": {
+      "id": 20,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    },
+    "location": {
+      "id": 20,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    }
+  },
+  {
+    "id": 4,
+    "name": "Beth Smith",
+    "status": "Alive",
+    "species": "Human",
+    "type": "",
+    "gender": "Female",
+    "origin": {
+      "id": 20,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    },
+    "location": {
+      "id": 20,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    }
+  },
+  {
+    "id": 5,
+    "name": "Jerry Smith",
+    "status": "Alive",
+    "species": "Human",
+    "type": "",
+    "gender": "Male",
+    "origin": {
+      "id": 20,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    },
+    "location": {
+      "id": 20,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    }
+  },
+  {
+    "id": 6,
+    "name": "Abadango Cluster Princess",
+    "status": "Alive",
+    "species": "Alien",
+    "type": "",
+    "gender": "Female",
+    "origin": {
+      "id": 2,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    },
+    "location": {
+      "id": 2,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    }
+  },
+  {
+    "id": 7,
+    "name": "Abradolf Lincler",
+    "status": "unknown",
+    "species": "Human",
+    "type": "Genetic experiment",
+    "gender": "Male",
+    "origin": {
+      "id": 20,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    },
+    "location": {
+      "id": 21,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    }
+  },
+  {
+    "id": 8,
+    "name": "Adjudicator Rick",
+    "status": "Dead",
+    "species": "Human",
+    "type": "",
+    "gender": "Male",
+    "origin": {
+      "id": null,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    },
+    "location": {
+      "id": 3,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    }
+  },
+  {
+    "id": 9,
+    "name": "Agency Director",
+    "status": "Dead",
+    "species": "Human",
+    "type": "",
+    "gender": "Male",
+    "origin": {
+      "id": 20,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    },
+    "location": {
+      "id": 20,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    }
+  },
+  {
+    "id": 10,
+    "name": "Alan Rails",
+    "status": "Dead",
+    "species": "Human",
+    "type": "Superhuman (Ghost trains summoner)",
+    "gender": "Male",
+    "origin": {
+      "id": null,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    },
+    "location": {
+      "id": 4,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    }
+  },
+  {
+    "id": 11,
+    "name": "Albert Einstein",
+    "status": "Dead",
+    "species": "Human",
+    "type": "",
+    "gender": "Male",
+    "origin": {
+      "id": 1,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    },
+    "location": {
+      "id": 20,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    }
+  },
+  {
+    "id": 12,
+    "name": "Alexander",
+    "status": "Dead",
+    "species": "Human",
+    "type": "",
+    "gender": "Male",
+    "origin": {
+      "id": 1,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    },
+    "location": {
+      "id": 5,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    }
+  },
+  {
+    "id": 13,
+    "name": "Alien Googah",
+    "status": "unknown",
+    "species": "Alien",
+    "type": "",
+    "gender": "unknown",
+    "origin": {
+      "id": null,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    },
+    "location": {
+      "id": 20,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    }
+  },
+  {
+    "id": 14,
+    "name": "Alien Morty",
+    "status": "unknown",
+    "species": "Alien",
+    "type": "",
+    "gender": "Male",
+    "origin": {
+      "id": null,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    },
+    "location": {
+      "id": 3,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    }
+  },
+  {
+    "id": 15,
+    "name": "Alien Rick",
+    "status": "unknown",
+    "species": "Alien",
+    "type": "",
+    "gender": "Male",
+    "origin": {
+      "id": null,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    },
+    "location": {
+      "id": 3,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    }
+  },
+  {
+    "id": 16,
+    "name": "Amish Cyborg",
+    "status": "Dead",
+    "species": "Alien",
+    "type": "Parasite",
+    "gender": "Male",
+    "origin": {
+      "id": null,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    },
+    "location": {
+      "id": 20,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    }
+  },
+  {
+    "id": 17,
+    "name": "Annie",
+    "status": "Alive",
+    "species": "Human",
+    "type": "",
+    "gender": "Female",
+    "origin": {
+      "id": 1,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    },
+    "location": {
+      "id": 5,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    }
+  },
+  {
+    "id": 18,
+    "name": "Antenna Morty",
+    "status": "Alive",
+    "species": "Human",
+    "type": "Human with antennae",
+    "gender": "Male",
+    "origin": {
+      "id": null,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    },
+    "location": {
+      "id": 3,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    }
+  },
+  {
+    "id": 19,
+    "name": "Antenna Rick",
+    "status": "unknown",
+    "species": "Human",
+    "type": "Human with antennae",
+    "gender": "Male",
+    "origin": {
+      "id": null,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    },
+    "location": {
+      "id": null,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    }
+  },
+  {
+    "id": 20,
+    "name": "Ants in my Eyes Johnson",
+    "status": "unknown",
+    "species": "Human",
+    "type": "Human with ants in his eyes",
+    "gender": "Male",
+    "origin": {
+      "id": null,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    },
+    "location": {
+      "id": 6,
+      "name": "",
+      "type": "",
+      "dimension": ""
+    }
+  }
+]

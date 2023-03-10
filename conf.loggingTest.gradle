@@ -1,0 +1,21 @@
+import org.gradle.api.tasks.testing.logging.TestLogEvent
+
+//------------------- PRINT TESTS BY CONSOLE ------------------------------
+
+tasks.withType(Test) {
+    testLogging.events.addAll([TestLogEvent.PASSED, TestLogEvent.SKIPPED, TestLogEvent.FAILED])
+    testLogging {
+        afterSuite { desc, result ->
+            if (!desc.parent) { // group the results in one
+                def output = "Results: ${result.resultType} (" +
+                        "${result.testCount} tests, " +
+                        "${result.successfulTestCount} successes, " +
+                        "${result.failedTestCount} failures, " +
+                        "${result.skippedTestCount} skipped)"
+                def startItem = '|  ', endItem = '  |'
+                def repeatLength = startItem.length() + output.length() + endItem.length()
+                println('\n' + ('-' * repeatLength) + '\n' + startItem + output + endItem + '\n' + ('-' * repeatLength))
+            }
+        }
+    }
+}

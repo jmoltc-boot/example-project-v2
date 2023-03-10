@@ -1,0 +1,59 @@
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+}
+
+plugins {
+	id 'org.springframework.boot' version '2.6.2'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'org.sonarqube' version '3.0'
+	id 'org.barfuin.gradle.jacocolog' version '1.0.1'
+	id 'jacoco'
+	id 'java'
+	id 'checkstyle'
+}
+
+apply from: 'conf.codeGeneration.gradle'
+apply from: 'conf.integrationTest.gradle'
+apply from: 'conf.sonarQube.gradle'
+apply from: 'conf.loggingTest.gradle'
+apply from: 'conf.coverageTest.gradle'
+
+group = 'cl.mobdev'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.mockito:mockito-core:3.6.28'
+}
+
+test {
+	useJUnitPlatform()
+}
+//------------------- CHECKSTYLE ------------------------------
+
+checkstyle {
+	config = rootProject.resources.text.fromFile('config/checkstyle/checkstyle.xml')
+	toolVersion '8.14'
+}
+
+build.dependsOn checkstyleMain
+
+//------------------- GIT HOOK ------------------------------
+
+task installGitHook(type: Copy) {
+	from new File(projectDir, 'pre-commit')
+	into { new File(projectDir, '.git/hooks') }
+	fileMode 0777
+}
+
+build.dependsOn installGitHook

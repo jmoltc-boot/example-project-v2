@@ -1,0 +1,49 @@
+test {
+    finalizedBy jacocoTestReport // report is always generated after tests run
+}
+
+//------------------------------- COVERAGE -----------------------------
+
+def coverageExclusions = [
+        // Exclude generated code, domain objects and configuration from coverage reports
+        'cl/mobdev/rickandmorty/*Application*'
+]
+
+jacocoTestReport {
+    reports {
+        xml.required = true
+    }
+    afterEvaluate {
+        def jtrFiles = files(classDirectories.files.collect {
+            fileTree(dir: it, exclude: coverageExclusions)
+        })
+        classDirectories.setFrom(jtrFiles)
+    }
+
+    dependsOn test // tests are required to run before generating the report
+}
+
+jacoco {
+    toolVersion = "0.8.5"
+}
+
+jacocoTestCoverageVerification {
+
+    violationRules {
+        rule {
+            limit {
+                minimum = 0.90
+            }
+        }
+    }
+
+    afterEvaluate {
+        def jtcvFiles = files(classDirectories.files.collect {
+            fileTree(dir: it, exclude: coverageExclusions)
+        })
+        classDirectories.setFrom(jtcvFiles)
+    }
+
+}
+
+build.dependsOn jacocoTestCoverageVerification
